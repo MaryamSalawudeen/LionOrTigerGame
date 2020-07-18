@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    android:onClick="Transition"
     tools:context=".MainActivity">
 
     <GridLayout
@@ -36,9 +35,10 @@
             android:layout_marginTop="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
-            android:alpha="0"
+            android:alpha="0.2"
             android:background="#000"
             android:onClick="imageViewIsTapped"
+            android:tag="6"
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="167dp" />
 
@@ -52,9 +52,10 @@
             android:layout_marginTop="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
-            android:alpha="0"
+            android:alpha="0.2"
             android:background="#000"
             android:onClick="imageViewIsTapped"
+            android:tag="7"
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="167dp" />
 
@@ -68,9 +69,10 @@
             android:layout_marginTop="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
-            android:alpha="0"
+            android:alpha="0.2"
             android:background="#000"
             android:onClick="imageViewIsTapped"
+            android:tag="8"
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="167dp" />
 
@@ -84,9 +86,10 @@
             android:layout_marginTop="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
-            android:alpha="0"
+            android:alpha="0.2"
             android:background="#000"
             android:onClick="imageViewIsTapped"
+            android:tag="0"
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="167dp" />
 
@@ -100,9 +103,10 @@
             android:layout_marginTop="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
-            android:alpha="0"
+            android:alpha="0.2"
             android:background="#000"
             android:onClick="imageViewIsTapped"
+            android:tag="1"
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="167dp" />
 
@@ -116,9 +120,10 @@
             android:layout_marginTop="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
-            android:alpha="0"
+            android:alpha="0.2"
             android:background="#000"
             android:onClick="imageViewIsTapped"
+            android:tag="2"
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="167dp" />
 
@@ -132,9 +137,10 @@
             android:layout_marginTop="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
-            android:alpha="0"
+            android:alpha="0.2"
             android:background="#000"
             android:onClick="imageViewIsTapped"
+            android:tag="3"
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="167dp" />
 
@@ -148,9 +154,10 @@
             android:layout_marginTop="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
-            android:alpha="0"
+            android:alpha="0.2"
             android:background="#000"
             android:onClick="imageViewIsTapped"
+            android:tag="5"
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="167dp" />
 
@@ -164,9 +171,10 @@
             android:layout_marginTop="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
-            android:alpha="0"
+            android:alpha="0.2"
             android:background="#000"
             android:onClick="imageViewIsTapped"
+            android:tag="4"
             tools:layout_editor_absoluteX="121dp"
             tools:layout_editor_absoluteY="167dp" />
     </GridLayout>
@@ -187,6 +195,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.085" />
 
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="40dp"
+        android:background="#fbc941"
+        android:text="Reset The Game"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gridLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
     
